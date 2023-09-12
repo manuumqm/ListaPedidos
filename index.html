@@ -9,13 +9,20 @@
 </head>
 <body>
     <div id="div-box">
-        <h1>Lista Pedidos</h1>
-        <input id="cliente" type="text" placeholder="Cliente">
-        <input id="mesa" type="text" placeholder="Mesa">
-        <input id="descricao" type="text" placeholder="Descrição">
+        <div id="container">
+            <div id="container-cadastro">
+                <h2>Cadastro de pedidos</h2>
+                <input id="cliente" type="text" placeholder="Cliente">
+                <input  id="mesa" type="text" placeholder="Mesa">
+                <input id="descricao" type="text" placeholder="Descrição">
+                <button onclick="criarPedido()" id="cadastrar">Cadastrar Pedido</button>
+                <button onclick="editarPedido()" id="editar" class="hidden">Editar Pedido</button>
+            </div>
+            <div id="container-lista">
+                
+            </div>
+            <div id="contador">
+                <p id="result"></p>
+            </div>
         </div>
-        <button onclick="criarPedido()">Cadastrar</button>
-        <div id="listarPedidos"></div>
-        <div id="listarPedidoUnico"></div>
-</body>
 </html>
